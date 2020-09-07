@@ -1,0 +1,62 @@
+<nav>
+    <div class="menu-icon"><span class="fas fa-bars"></span></div>
+    <div class="logo">tastybox</div>    
+    <div class="nav-items">
+      <li class="dropdown">
+        <button class="dropbtn"><a [routerLink]="['/shop']">Shop</a></button>
+      </li>
+      
+      <li class="dropdown">
+        <button class="dropbtn"><a href="#">Veg</a></button>
+        <div class="dropdown-content">
+          <a href="#">North Indian</a>
+          <a href="#">South Indian</a>
+      </div>
+      </li>
+
+      <li class="dropdown">
+        <button class="dropbtn"><a href="#">NonVeg</a></button>
+        <div class="dropdown-content">
+          <a href="#">North Indian</a>
+          <a href="#">South Indian</a>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <button class="dropbtn"><a href="#">Desserts</a></button>
+        <div class="dropdown-content">
+          <a href="#">Cookies</a>
+          <a href="#">Cakes</a>
+          <a href="#">Bakery</a>
+          <a href="#">Ice-creams</a>
+          <a href="#">Frozen desserts</a>
+          <a href="#">Sweet Soups</a>
+          <a href="#">more..</a>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <button class="dropbtn"><a [routerLink]="['/home']">Home</a></button>
+      </li>
+
+      <li class="dropdown">
+        <button class="dropbtn"><a href="#">Contact</a></button>
+      </li>
+
+    </div>
+      <div class="search-icon"><span class="fas fa-search"></span></div>
+      <div class="cancel-icon"><span class="fas fa-times"></span></div>
+      <form action="#">
+        <input type="search" class="search-data" placeholder="Search">
+        <button type="submit"><span class="fas fa-search"></span></button>
+        
+      </form>  
+      <span></span>
+      <div class="login">
+        <button type="button" class="btn" [routerLink]="['/login']">Login</button>
+      </div>
+         
+      
+    
+  
+</nav>

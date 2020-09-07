@@ -1,0 +1,8 @@
+<div *ngIf="(cartItem.qty>0)">
+<div class="cart-item">      
+    <span>{{cartItem.productName}}</span><span></span> x
+    <span>{{cartItem.qty}}</span>:
+    <strong>{{cartItem.qty* cartItem.price | currency:'INR' }}</strong>      
+</div>
+</div>
+

@@ -1,0 +1,22 @@
+<div class="col-md-2">
+  <div class="row-md-1">
+<div  *ngIf="cartItems.length===0" class="alert alert-info">Your cart is Empty.</div>
+<div *ngIf= "cartItems.length > 0"class="list-group-flush">
+
+  <li class="list-group-item" *ngFor="let item of cartItems">    
+    <app-cart-item [cartItem]="item"></app-cart-item>  
+  </li>
+
+  <li class="list-group-item active">
+    <button class="button">Total {{cartTotal | currency:'INR'}}</button>
+  </li> 
+  
+
+  <!--<button class="button" style="vertical-align:middle"><span>CHECKOUT</span></button>-->
+  <button class="btn btn-1 btn-sep icon-cart ">CHECKOUT</button>
+   
+</div>
+</div>
+</div>
+
+

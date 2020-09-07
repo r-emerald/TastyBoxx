@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    color: #f2f2f2;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: #f2f2f2;
+}
+nav {
+    background: #171c24;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height:70px;
+    padding:0 100px;
+}
+
+nav .logo{
+    color:#fff;
+    letter-spacing:-1px;
+    font-size: 30px;
+    font-weight: 700;
+}
+nav .nav-items{
+    list-style: none;
+    padding:0 0 0 40px;
+    display: flex;
+    flex:1;
+}
+nav .nav-items li{
+    padding: 0 15px;
+}
+nav .nav-items li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+nav .nav-items li a:hover{
+    color:#ff3d00;
+
+}
+nav form{
+    display:flex;
+    height:40px;
+    border-radius: 2px;
+    padding: 2px;
+    background: #1e232b;
+    min-width: 18%!important;
+    border: 1px solid rgba(155,155,155,0.2);
+}
+nav form .search-data{
+    height:100%;
+    width:100%;
+    padding:0 10px;
+    color:#fff;
+    background: none;
+    border:none;
+    font-weight: 500;
+    font-size: 17px;
+}
+nav form button{
+    padding:0 15px;
+    background: #ff3d00;
+    border: none;
+    cursor:pointer;
+    font-size: 17px;
+    color:#fff;
+    border-radius: 2px;
+}
+
+nav .login{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+nav .login .btn:hover{
+    color:#ff3d00;
+}
+nav .menu-icon,
+nav .search-icon,
+nav .cancel-icon{
+    width:40px;
+    color:#fff;
+    text-align: center;
+    margin:0 50px;
+    font-size:18px;
+    cursor:pointer;
+    display:none;
+}
+nav .menu-icon span,
+nav .search-icon,
+nav .cancel-icon{
+    display: none;
+}
+
+@media (max-width:1140px)
+{
+    nav{
+        padding:0 ;
+    }
+    nav .logo{
+        flex:2;
+        text-align:center;
+    }
+    nav .nav-items{
+        position: fixed;
+        z-index:1;
+        top: 70px;
+        left:0px;
+        width:30%;
+        height:100%;
+        background: #14141f;
+        align-items:initial;
+        display: inline-table;        
+        padding-right: 150px;        
+        text-align: left;
+    }
+    .dropdown .dropdown-content a {
+        background-color: #14141f;
+    }
+    .dropbtn{
+        background-color: #14141f;
+        border: none;
+    }
+    
+    nav .nav-items li{
+        line-height: 0px;
+        margin:10px 20px 20px;        
+    }
+    nav .nav-items li .dropdown-content{
+        line-height: 20px;
+    }
+    
+    nav .nav-items li .dropbtn{
+        background-color: #14141f;
+    }
+    nav .nav-items li a{
+        font-size: 20px;
+        
+    }
+    nav form button{
+        display: block;
+    }
+    nav.menu-icon{
+        display: block;
+    }
+   
+    nav .search-icon{
+        display: none;
+    }
+    nav .menu-icon{
+    display: block;
+    }
+
+    .dropdown .dropdown-content a {
+        color:  #171c24;
+        background-color:#1e232b;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+      }
+
+}
+
+
+
+
+/*for hoverable dropdowns*/
+.dropbtn {
+  background-color: #171c24;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  #171c24;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown .dropdown-content a {
+  color:  #171c24;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/*.nav. a:hover .dropbtn {background-color: #ff3d00;}*/
+
+/*second hover menu*/
+ul{
+    position: relative;
+    display: inline-block;
+    padding-top: 10px;
+}
+/*css for login */
+button.btn{
+    font-size: 20px;
+    background-color: #171c24;
+}
